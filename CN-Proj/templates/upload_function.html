@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>D.E.D</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>D.E.D</h1>
+    <h2>DETECT.ENCRYPT.DECRYPT</h2>
+    <h3>Upload your file and check if it's safe</h3>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".py">
+        <br>
+        <input type="submit" value="Upload and Search">
+        <br><a href="/decrypt">Decrypt a file</a>
+    </form>
+</body>
+</html>
